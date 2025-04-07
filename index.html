@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AkashPathak</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      margin: 0;
+      background: #0D1B2A;
+      font-family: 'Segoe UI', sans-serif;
+      color: #E0E1DD;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1b263b;
+      padding: 12px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffcc74;
+      font-family: 'Sofia', cursive;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 15px;
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc74;
+      transform: scale(1.1);
+    }
+
+    .meimg {
+      width: 300px;
+      float: right;
+      margin: 30px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .headings {
+      padding: 40px;
+    }
+
+    .span {
+      font-size: 45px;
+      color: #E0E1DD;
+    }
+
+    #app {
+      font-size: 80px;
+      font-family: sans-serif;
+      color: transparent;
+      -webkit-text-stroke: 1px #778DA9;
+      background: url('back.png');
+      -webkit-background-clip: text;
+      background-position: 0 0;
+      animation: back 15s linear infinite;
+      margin: 0;
+    }
+
+    @keyframes back {
+      100% {
+        background-position: 2000px 0;
+      }
+    }
+
+    .profession {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .something {
+      font-size: 18px;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .goals {
+      display: flex;
+      justify-content: center;
+      padding: 30px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .goals a button {
+      background-color: #ffcc74;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.4s;
+      cursor: pointer;
+    }
+
+    .goals a button:hover {
+      background-color: transparent;
+      border: 2px solid #ffcc74;
+      color: #ffcc74;
+      transform: scale(1.1);
+    }
+
+    .footer {
+      background: linear-gradient(135deg, #1e1e2f, #34344e);
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: #cccccc;
+      margin-bottom: 8px;
+    }
+
+    .footer-icons a {
+      margin: 0 10px;
+      color: #ffffff;
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .footer-icons a:hover {
+      transform: scale(1.2);
+      color: #00f7ff;
+    }
+
+    .footer-license {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .footer-license a {
+      color: #00f7ff;
+      text-decoration: none;
+    }
+
+    .footer-license a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .meimg {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+      }
+
+      #app {
+        font-size: 50px;
+        text-align: center;
+      }
+
+      .span {
+        text-align: center;
+        display: block;
+      }
+
+      .goals {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">AkashPathak</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#socialmedia">Social Media</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="headings">
+      <img src="myimage.jpg" alt="Akash Pathak" class="meimg">
+      <span class="span">I'M</span>
+      <h1 id="app">Akash Pathak</h1>
+      <h2 class="profession">Video Editor / YouTuber</h2>
+      <p class="something">
+        I'm a passionate Video Editor & YouTube Content Creator who turns raw footage into engaging, story-driven visuals.
+        Whether it's cinematic edits, vlogs, or social media content — I bring your vision to life with style and precision.
+        <br>Hire me for beautiful edits that make your content shine!
+      </p>
+    </div>
+
+    <ul class="goals" id="socialmedia">
+      <li>
+        <a href="https://www.youtube.com/@AkashPathak-MMV" target="_blank"><button>YouTube</button></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/akashpathak_227/" target="_blank"><button>Instagram</button></a>
+      </li>
+    </ul>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">Akash Porfolio</div>
+        <div class="footer-tagline">Video Editor | YouTuber</div>
+
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/akashpathak_227/" target="_blank" title="Instagram">📸</a>
+          <a href="https://www.youtube.com/@AkashPathak-MMV" target="_blank" title="YouTube">🎥</a>
+        </div>
+
+        <div class="footer-license">
+          © 2025 Akash Portfolio. All rights reserved. <br>
+          Licensed under 
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            CC BY-NC-SA 4.0
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

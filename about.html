@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #161922;
+      color: white;
+    }
+
+    .about {
+      width: 100%;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      gap: 40px;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .text {
+      max-width: 600px;
+    }
+
+    .text h1 {
+      font-size: 48px;
+      color: #f7af33;
+      margin-bottom: 15px;
+    }
+
+    .text h5 {
+      font-size: 22px;
+      color: #ffffffcc;
+      margin-bottom: 20px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+
+    .text p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #c0c4d6;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #ffcc74;
+      color: #161922;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.4s ease;
+    }
+
+    button:hover {
+      background-color: transparent;
+      border: 2px solid #ffcc74;
+      color: #ffcc74;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 768px) {
+      .text h1 {
+        font-size: 36px;
+      }
+
+      .text h5 {
+        font-size: 18px;
+      }
+
+      .text p {
+        font-size: 16px;
+      }
+
+      .about {
+        padding: 40px 15px;
+      }
+
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text h1 {
+        font-size: 28px;
+      }
+
+      .text h5 {
+        font-size: 16px;
+      }
+
+      .text p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="about">
+    <div class="content">
+      <img src="image.JPG" alt="Akash Pathak">
+
+      <div class="text">
+        <h1>About Me</h1>
+        <h5>YouTuber & Developer</h5>
+        <p>
+          Hi, I’m Akash Pathak – a passionate video editor and YouTube content creator, currently pursuing my Bachelor’s degree. I specialize in crafting visually engaging and emotionally impactful videos that tell powerful stories.
+          <br><br>
+          Whether it’s editing cinematic travel vlogs, dynamic YouTube videos, or short films, I bring creativity, precision, and a strong storytelling sense to every project.
+          <br><br>
+          I’m constantly learning, experimenting, and leveling up my skills – because I believe every frame has the power to inspire. If you're looking for someone who can turn raw footage into something truly special, let’s work together!
+        </p>
+        <a href="index.html"><button type="button">← Home</button></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
